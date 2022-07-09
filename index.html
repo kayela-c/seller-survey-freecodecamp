@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description" class="description">
+      Please submit your answers below and we will text you shortly!
+    </p>
+    <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label"
+            >First Name
+            <input
+            name="name"
+              type="text"
+              id="name"
+              placeholder="Enter your name..."
+              required
+          /></label>
+        </div>
+        <div class="form-group">
+          <label for="email-input" id="email-label"
+            >Email
+            <input
+              name="email"  
+              type="email"
+              id="email-input"
+              placeholder="Enter your email..."
+              required
+          /></label>
+        </div>
+        <div class="form-group">
+          <label for="phone-number" id="phone-label"
+            >Phone Number
+            <input
+              name="phone-number"  
+              type="number"
+              id="phone-number"
+              placeholder="Enter your phone number..."
+              required
+          /></label>
+        </div>
+        <div class="form-group">
+          <p>Preferred method of contact:</p>
+          <label for="contact-method-phone" id="phonechk-label">
+            <input
+              id="contact-method-phone"  
+              type="checkbox"
+              name="contact-method"
+              value="1"
+              class="inline"
+            />
+            Phone</label
+          >
+          <label for="contact-method-email" id="emailchk-label"
+            ><input
+              type="checkbox"
+              name="contact-method"
+              value="2"
+              class="inline"
+              id="contact-method-email"
+            />
+            Email</label
+          >
+        </div>
+        <label for="wanted-price-text" id="wanted-price-label"></label>
+          <p>How much do you want for your house?</p>
+          <input id="wanted-price-text" type="number" name="wanted-price" placeholder="Type here..."
+        /></label>
+        <div class="form-group">
+          <p>When do you need to sell your house?</p>
+          <label for="timeframe-3months"
+            ><input id="timeframe-3months" type="radio" name="timeframe" value="1" class="inline" />
+            0-3 months</label
+          >
+        </div>
+        <div class="form-group">
+          <label for="timerame-6months"
+            ><input id="timerame-6months" type="radio" name="timeframe" value="2" class="inline" />
+            3-6 months</label
+          >
+        </div>
+        <div class="form-group">
+          <label for="timerame-max"
+            ><input id="timerame-max" type="radio" name="timeframe" value="3" class="inline" /> 6+
+            months</label
+          >
+        </div>
+        <p>Why are you looking to sell your house?</p>
+        <label for="" id="sellreason-label">
+          <select name="sellreason" id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Costs too much to remodel</option>
+            <option value="2">Need to move ASAP</option>
+            <option value="3">Inherited it and don't want to keep it</option>
+            <option value="4">Owe too much</option>
+            <option value="5">Death/Divorce</option>
+            <option value="6">Other</option>
+          </select></label
+        >
+        <div class="form-group">
+          <p>If other, what's the reason?</p>
+          <label  for="sellreason"id="sellreason-other-label"
+            ><input id="sellreason" type="text" name="sellreason-other" placeholder="Type here..."
+          /></label>
+        </div>
+      <fieldset>
+        <div class="form-group">
+          <p>Additional Comments or questions:</p>
+          <label for="comments-textarea" id="comments-label">
+            <textarea rows="10" cols="50" id="comments-textarea" name="comments" placeholder="Enter comments here..."></textarea>
+          </label>
+        </div>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
